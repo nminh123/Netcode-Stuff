@@ -6,7 +6,8 @@ using static NS.Utils.Input.Controls;
 
 namespace NS.Utils.Input
 {
-    public class InputReader : MonoBehaviour, IPlayerActions
+    [CreateAssetMenu(fileName = "New Input Reader", menuName = "Input/Input Reader")]
+    public class InputReader : ScriptableObject, IPlayerActions
     {
         public event Action<Vector2> MoveEvent;
         private Controls m_controls;
