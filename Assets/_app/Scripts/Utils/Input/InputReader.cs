@@ -10,7 +10,7 @@ namespace NS.Utils.Input
     public class InputReader : ScriptableObject, IPlayerActions
     {
         public event Action<Vector2> MoveEvent;
-        public event Action<bool> ShootEvent;
+        public event Action ShootEvent;
         private Controls m_controls;
 
         private void OnEnable()
@@ -32,13 +32,9 @@ namespace NS.Utils.Input
 
         public void OnShoot(InputAction.CallbackContext context)
         {
-            if (context.performed)
+            if (context.started)
             {
-                ShootEvent?.Invoke(true);
-            }
-            if(context.canceled)
-            {
-                ShootEvent?.Invoke(false);
+                ShootEvent?.Invoke();
             }
         }
     }
