@@ -32,7 +32,7 @@ namespace NS.Utils.Input
 
         public void OnShoot(InputAction.CallbackContext context)
         {
-            if (context.started)
+            if (context.performed)
             {
                 ShootEvent?.Invoke(true);
             }
