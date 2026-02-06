@@ -18,5 +18,10 @@ namespace NS.Utils
             public static float BULLET_LIFE_TIME { get; } = 5f;
             public static float FIRE_RATE { get; } = .25f;
         }
+
+        public struct NetworkTopDownMove
+        {
+            public static float SPEED { get; } = 5f;
+        }
     }
 }

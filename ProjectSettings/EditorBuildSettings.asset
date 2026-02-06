@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_app/NetworkTopDownMove/Scenes/NetworkTopDownMove.unity
+    guid: 94bcdf383edf54d13a4071c86390d1cd
+  - enabled: 1
     path: Assets/_app/NetworkShoot/Scenes/NetworkShoot.unity
     guid: 0c52c834a45484a6e9293f1ad8849ef9
   - enabled: 1
